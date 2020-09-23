@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de grid</title>
+</head>
+<style>
+
+html {
+    font-family: roboto, regular;
+    color: white;;
+}
+
+body {
+    padding: 50px;
+}
+.wrapper {
+   display: grid;
+   grid-template-columns: 600px 300px 300px;
+   grid-auto-rows: 100px;
+   border-radius: 5px;
+}
+.grid {
+    border-radius: 5px;
+    padding: 3em;
+}
+
+.grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: #00a6ff;
+    margin-right: 50px;
+}
+.grid-2 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-bottom: 65px;
+    background: -webkit-linear-gradient(left, #da546a , #00c3ff);
+}
+.grid-3 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background: linear-gradient(transparent, #444343 100%), url('./assets/bg-item-3.jpeg');
+    margin-top: 75px;
+}
+.text {
+    text-align: center;
+    margin-top: 94px;
+}
+
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="grid grid-1"></div>
+        <div class="grid grid-2"></div>
+        <div class="grid grid-3">
+            <div class="text">"Nenhuma oração é em vão; o pedido pode ser recusado, mas acredito que quem o fez sempre será recompensado com uma graça.“ —  Robert Louis Stevenson</div>
+        </div>
+        
+     </div>
+</body>
+</html>
